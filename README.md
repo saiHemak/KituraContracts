@@ -12,5 +12,5 @@ KituraContracts is a library containing type definitions shared by client (e.g. 
 The 0.0.x releases were tested on macOS and Linux using the Swift 4.0.2 binary. Please note that this is the default version of Swift that is include in [Xcode 9.1](https://developer.apple.com/xcode/).
 
 ## Community
-
+test
 We love to talk server-side Swift and Kitura. Join our [Slack](http://swift-at-ibm-slack.mybluemix.net/) to meet the team!
