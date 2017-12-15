@@ -5,7 +5,7 @@ branches:
   only:
     - master
     - develop
-    - jazzy_travis
+    - jazzy-travis-dd
     - /^issue.*$/
 
 matrix:
@@ -19,7 +19,7 @@ matrix:
 
 before_install:
   - git clone https://github.com/IBM-Swift/Package-Builder.git
-  - if [[ $TRAVIS_COMMIT_MESSAGE == *"Docs"* ]]; then sudo gem install jazzy && cd /Users/travis/build/IBM-Swift/KituraContracts && sudo jazzy ; fi
+  - if [[ $TRAVIS_COMMIT_MESSAGE == *"Docs"* ]]; then swift package generate-xcodeproj && sudo gem install jazzy && cd /Users/travis/build/IBM-Swift/KituraContracts && sudo jazzy ; fi
 
 script:
   - ./Package-Builder/build-package.sh -projectDir $TRAVIS_BUILD_DIR
