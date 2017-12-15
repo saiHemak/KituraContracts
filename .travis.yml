@@ -5,6 +5,7 @@ branches:
   only:
     - master
     - develop
+    - jazzy_travis
     - /^issue.*$/
 
 matrix:
