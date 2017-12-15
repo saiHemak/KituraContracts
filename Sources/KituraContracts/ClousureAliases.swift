@@ -22,7 +22,7 @@ The `ResultClosure` is used by other `Codable` aliases when responding with only
 public typealias ResultClosure = (RequestError?) -> Void
 
 /**
-The `CodableResultClosure` is used by other `Codable` aliases when responding with an object which conforms to Codable or an `RequestError` is needed.
+The `CodableResultClosure` is used by other `Codable` aliases when responding with an object which conforms to Codable, or an `RequestError` is needed.
 */
 public typealias CodableResultClosure<O: Codable> = (O?, RequestError?) -> Void
 
