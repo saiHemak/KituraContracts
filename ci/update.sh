@@ -38,6 +38,7 @@ git remote add origin https://SwiftDevOps:${GITHUB_TOKEN}@github.com/IBM-Swift/K
 git fetch
 
 swift package generate-xcodeproj
+ruby --version
 sudo gem install jazzy
 cd /Users/travis/build/IBM-Swift/KituraContracts
 jazzy
