@@ -17,7 +17,7 @@
 // MARK: Codable Type Aliases
 
 /**
-The `ResultClosure` is used by other `Codable` aliases when responding with only a `RequestError` is needed
+The `ResultClosure` is used by other `Codable` aliases when responding with only a `RequestError` is needed.
  
  ````swift
  // The following two typealias make use of ResultClosure
