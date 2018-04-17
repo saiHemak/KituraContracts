@@ -32,6 +32,11 @@ The `CodableArrayResultClosure` is used by other `Codable` aliases when respondi
 public typealias CodableArrayResultClosure<O: Codable> = ([O]?, RequestError?) -> Void
 
 /**
+The `SimpleCodableResultClosure` is used by other `Codable` aliases when responding with an object which conforms to Codable or an `RequestError` is needed.
+*/
+public typealias SimpleCodableResultClosure<O: Codable> = (O?, RequestError?) -> Void
+
+/**
  The `IdentifierCodableArrayResultClosure` is used by other `Codable` aliases when responding with an array of tuples containing an identifier and a Codable object, or an `RequestError`.
  */
 public typealias IdentifierCodableArrayResultClosure<Id: Identifier, O: Codable> = ([(Id, O)]?, RequestError?) -> Void
